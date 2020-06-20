@@ -1,0 +1,24 @@
+---
+title: "Environmental"
+author: "David Rickmann"
+date: "12 June 2020"
+output: html_document
+---
+
+## Blackwater extraction Pump
+
+Contaminated water extraction is acheived through a 240v impeller pump. 
+
+The control interface is a TP-LINK HS110 WiFi Plug.
+
+
+
+
+
+
+
+
+--
+
+
+

@@ -1,0 +1,20 @@
+---
+title: "Front Page"
+author: "David Rickmann"
+date: "12 June 2020"
+output: html_document
+---
+
+
+
+
+
+<center>
+
+# Command Interface
+
+![](img/wheel.svg)
+
+## Vagary
+
+</center>

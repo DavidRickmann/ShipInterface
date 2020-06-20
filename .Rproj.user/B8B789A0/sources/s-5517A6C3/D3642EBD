@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1592350019734.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "D3642EBD",
+    "lastKnownWriteTime" : 1592384814,
+    "last_content_update" : 1592384814145,
+    "path" : "~/Projects/VagaryInterface/panels/environmental/environmental.r",
+    "project_path" : "panels/environmental/environmental.r",
+    "properties" : {
+        "cursorPosition" : "38,27",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

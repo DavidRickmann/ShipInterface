@@ -1,0 +1,8 @@
+default:
+  vessel:
+    name : "VAGARY"
+    registration: "2307642"
+    
+    
+  auth:
+    IFTT : 

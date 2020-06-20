@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1591794881262.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "96|32|105|2|\n",
+    "hash" : "0",
+    "id" : "1936FC9",
+    "lastKnownWriteTime" : 1592437026,
+    "last_content_update" : 1592437026613,
+    "path" : "~/Projects/VagaryInterface/app.R",
+    "project_path" : "app.R",
+    "properties" : {
+        "cursorPosition" : "41,11",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

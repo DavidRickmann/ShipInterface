@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1592482903375.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "577956926",
+    "id" : "6502E1A8",
+    "lastKnownWriteTime" : 1592653786,
+    "last_content_update" : 1592653786919,
+    "path" : "~/Projects/VagaryInterface/config.yml",
+    "project_path" : "config.yml",
+    "properties" : {
+        "cursorPosition" : "6,7",
+        "scrollLine" : "0",
+        "tempName" : "Untitled3"
+    },
+    "relative_order" : 9,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "yaml"
+}

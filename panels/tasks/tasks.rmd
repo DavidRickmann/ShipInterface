@@ -1,0 +1,70 @@
+---
+title: "Tasks"
+author: "David Rickmann"
+date: "12 June 2020"
+output: html_document
+---
+
+# Outstanding Tasks
+
+## Pump Control
+
+Replace the IFTTT Solution with the half made python solution.   
+Possible attempt to rewrite it in native R   
+
+Get data from pump.   
+Display it.   
+
+Get schematic animated (possibly?) on fiverr   
+
+## Library
+
+This doesn't really work at all at the moment.
+Find some way to link all the rmd files together. like a wiki.    
+ideally find a way to link to explanatory articles from the control pages   
+more and more I am wondering if this needs to be more browsery than shiny app...   
+
+## Electrical Distribution Diagram
+
+Top down view showing all the electrical routing and details of the MCB.
+
+
+
+
+## Tasks
+
+Integrate the rtodoist library into this document.    
+Use Todist to manage this tasks page   
+
+## weather
+
+Build weather subsystem using weatherr library.   
+Some graphics may be pinchable from the hackday project barry shared.
+
+## architecture
+
+Fix some of the modules that don;t work.
+Data should be drawn from, and reported back to, a central source.   
+Ask Caspar? Maybe a database server?   
+
+
+## location
+
+see if the GPS unit is in the bag of sensors I gave to caspar.    
+If so hook it up and get data from it.   
+That data needs to go somewhere central. Because Weather will need it.   
+
+### Helm and navigation
+
+Make a little map as the start of helm control stuff. Integrate the location data.   
+see if I can find a river navigation map.   
+
+## Fitbit data?
+
+Maybe?
+
+
+--
+
+
+

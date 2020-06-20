@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1592384819578.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "98252D41",
+    "lastKnownWriteTime" : 1592437024,
+    "last_content_update" : 1592437024835,
+    "path" : "~/Projects/VagaryInterface/panels/weather/weather.r",
+    "project_path" : "panels/weather/weather.r",
+    "properties" : {
+        "cursorPosition" : "40,22",
+        "scrollLine" : "0",
+        "tempName" : "Untitled5"
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1592265724334.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "312377532",
+    "id" : "9EC9BD7",
+    "lastKnownWriteTime" : 1592653866,
+    "last_content_update" : 1592653866971,
+    "path" : "~/Projects/VagaryInterface/experiments.r",
+    "project_path" : "experiments.r",
+    "properties" : {
+        "cursorPosition" : "68,6",
+        "scrollLine" : "55",
+        "tempName" : "Untitled3"
+    },
+    "relative_order" : 8,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

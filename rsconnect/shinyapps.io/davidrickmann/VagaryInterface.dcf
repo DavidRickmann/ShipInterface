@@ -1,0 +1,12 @@
+name: VagaryInterface
+title: VagaryInterface
+username:
+account: davidrickmann
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2461387
+bundleId: 3276156
+url: https://davidrickmann.shinyapps.io/VagaryInterface/
+when: 1592301177.09605
+asMultiple: FALSE
+asStatic: FALSE
