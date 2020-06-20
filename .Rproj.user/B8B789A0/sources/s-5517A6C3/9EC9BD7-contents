@@ -4,15 +4,7 @@
 
 trekcolors::lcars_2357()
 
-## todoist
 
-library(rtodoist)
-
-
-
-set_todoist_api_token(token)
-
-tasks <- get_tasks(token = get_todoist_api_token())
 
 
 #here
