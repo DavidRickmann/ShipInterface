@@ -9,6 +9,7 @@ library(shinyjs)
 library(V8)
 library(here)
 library(waiter)
+library(keyring)
 
 #options(shiny.port = 7775)
 options(shiny.host = "127.0.0.1")  # SET THIS TO LOCAL IP ADDRESS

@@ -12,9 +12,72 @@ moduleServer <- function(id, module) {
 #allow assignation of standard colours in the config
 
 weatherpanelUI <- function(id) {
-  use_waiter() # include dependencies
-  waiter_show_on_load()
-  uiOutput(NS(id, "panel"))
+  
+  ns <- NS(id)
+  
+  home <- lcarsButton(
+    "Home",
+    "Home",
+    icon = NULL, 
+    color = "neon-carrot",
+    hover_color = "mariner",
+    width = 150
+  ) 
+  
+  lcarsPage(
+  fluidRow(
+    lcarsBox(
+      title = NULL,
+      subtitle = "Atmospheric Conditions",
+      corners = 4, 
+      sides = c(3,4),
+      left_inputs = NULL,
+      right_inputs = NULL,
+      color = "neon-carrot",
+      side_color = "neon-carrot",
+      title_color = "mariner",
+      subtitle_color = "mariner",
+      title_right = TRUE,
+      subtitle_right = TRUE,
+      clip = FALSE,
+      width_left = 150,
+      width_right = 60,
+      fluidRow(
+      htmlOutput(ns("text"))
+      )
+    )
+  ),
+  fluidRow(
+    lcarsBox(
+      title = NULL,
+      subtitle = NULL,
+      corners = c(1), 
+      sides = c(1,4),
+      left_inputs = home,
+      right_inputs = NULL,
+      color = "neon-carrot",
+      side_color = "neon-carrot",
+      title_color = "mariner",
+      subtitle_color = "mariner",
+      title_right = TRUE,
+      subtitle_right = TRUE,
+      clip = FALSE,
+      width_left = 150,
+      width_right = 60,
+      fluidRow(
+        htmlOutput(ns("tempTitle")),
+        plotOutput(ns("plot1"))
+      ),
+      fluidRow(
+        column(6),
+        column(6,
+          htmlOutput(ns("rainTitle")),
+          plotOutput(ns("plot2"))
+        )
+      )
+    )
+  )
+  )
 }
 
 weatherpanel <- function(id) {
@@ -25,6 +88,11 @@ weatherpanel <- function(id) {
     library(jsonlite)
     library(dplyr)
     
+    
+    
+    # header box bits
+    
+    output$text <- renderUI({HTML(paste("Hello", "everyone", sep = '<br/>')) })
     
     #get weather
     #yeah this should be in a function and location should be a variable but this'll do to get the system back up and running
@@ -40,59 +108,37 @@ weatherpanel <- function(id) {
                            "symbol_12hr","symbol_1hr","precip_1hr",
                            "symbol_6hr","temp_air_max_6hr","temp_air_min_6hr","precip_6hr")
     
-    
     weather$time <- parse_date_time(weather$time,"Ymd HMS")
-    #weathernow <- weather %>%
-    #  filter(row_number()==1) 
     
     
     
-    home <- lcarsButton(
-      "Home",
-      "Home",
-      icon = NULL,
-      color = "neon-carrot",
-      hover_color = "mariner",
-      width = 150
-    ) 
+    #body box bits
+
     
-    
-   output$panel <- renderLcarsBox(
-     lcarsBox(
-       fluidRow(
-         waiter_show( # show the waiter
-           spin_fading_circles() # use a spinner
-         ),
-         renderPlot(ggplot(weather, aes(x=time, y=temp_air)) + 
+    output$tempTitle <- renderUI({HTML("AIR TEMPERATURE FORECAST") })
+    output$plot1 <- renderPlot(ggplot(weather, aes(x=time, y=temp_air)) + 
                       geom_line(aes(color =  "#FFCC99")) + 
                       theme_lcars_dark() + 
-                      theme(legend.position = "none") ),
-         
-         renderPlot(ggplot(weather, aes(x=time, y=precip_1hr)) + 
+                      theme(legend.position = "none", 
+                            axis.title.x=element_blank(),
+                            axis.title.y=element_blank() 
+                            )    
+                      )
+    
+    rain <- weather %>% select(time, precip_1hr) %>% head(24)
+    
+    output$rainTitle <- renderUI({HTML("PRECIPITATION FORECAST") })     
+    output$plot2 <- renderPlot(ggplot(rain, aes(x=time, y=precip_1hr)) + 
                       geom_line(aes(color =  "#FFCC99")) + 
                       theme_lcars_dark() + 
-                      theme(legend.position = "none") ),
+                        theme(legend.position = "none", 
+                              axis.title.x=element_blank(),
+                              axis.title.y=element_blank()
+                        )     )
          
-       waiter_hide()
-         ),
-       title = "Atmospheric Conditions",
-       subtitle = "Predicted Temperature",
-       corners = c(1,4), 
-       sides = c(1,3,4),
-       left_inputs = home,
-       right_inputs = NULL,
-       color = "neon-carrot",
-       side_color = "neon-carrot",
-       title_color = "mariner",
-       subtitle_color = "mariner",
-       title_right = TRUE,
-       subtitle_right = TRUE,
-       clip = FALSE,
-       width_left = 150,
-       width_right = 60
-     )
+     
    
-   )
+   
   })
 }
 

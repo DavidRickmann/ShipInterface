@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1592661896767.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3038476928",
+    "id" : "2AA125AB",
+    "lastKnownWriteTime" : 1592661978,
+    "last_content_update" : 1592661978702,
+    "path" : "~/Projects/VagaryInterface/panels/tasks/tasks.rmd",
+    "project_path" : "panels/tasks/tasks.rmd",
+    "properties" : {
+        "cursorPosition" : "55,41",
+        "scrollLine" : "36"
+    },
+    "relative_order" : 9,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
