@@ -4,5 +4,6 @@ default:
     registration: "2307642"
     
     
-  auth:
-    IFTT : 
+  openhab:
+    IP: 127.0.0.1
+    Port: 8080

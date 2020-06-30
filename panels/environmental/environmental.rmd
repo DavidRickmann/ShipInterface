@@ -7,9 +7,10 @@ output: html_document
 
 ## Blackwater extraction Pump
 
-Contaminated water extraction is acheived through a 240v impeller pump. 
+Contaminated water extraction is achieved through a 240v impeller pump. 
 
 The control interface is a TP-LINK HS110 WiFi Plug.
+Commands are sent via the OpenHab Server
 
 
 

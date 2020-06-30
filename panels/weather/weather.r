@@ -92,7 +92,7 @@ weatherpanel <- function(id) {
     
     # header box bits
     
-    output$text <- renderUI({HTML(paste("Hello", "everyone", sep = '<br/>')) })
+    output$text <- renderUI({HTML("<br><center><h1> ACCESSING REMOTE SENSOR FEEDS </h1></center>") })
     
     #get weather
     #yeah this should be in a function and location should be a variable but this'll do to get the system back up and running

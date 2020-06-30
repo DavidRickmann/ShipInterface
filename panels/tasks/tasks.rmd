@@ -9,9 +9,6 @@ output: html_document
 
 ## Pump Control
 
-Replace the IFTTT Solution with the half made python solution.   
-Possible attempt to rewrite it in native R   
-
 Get data from pump.   
 Display it.   
 

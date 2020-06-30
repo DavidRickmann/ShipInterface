@@ -17,18 +17,13 @@ options(shiny.host = "127.0.0.1")  # SET THIS TO LOCAL IP ADDRESS
 showtext_auto()
 
 ship <- get("vessel")
-key <- ship$commandkey
 
 source("panels/environmental/environmental.r")
 source("panels/library/library.r")
 source("panels/weather/weather.r")
 source("panels/tasks/tasks.r")
 
-
-  
 ui <- lcarsPage(
-  
-  
   lcarsHeader(
   title = paste(ship$name," - ",ship$registration),
   color = "mariner",
